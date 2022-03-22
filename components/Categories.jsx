@@ -20,7 +20,7 @@ function Categories(props) {
 			<div className='my-2'>
 				{categories && categories.map(item => {
 					return(
-						<Link key={item.slug} href={item.slug}>
+						<Link key={item.slug} href={`/categories/${item.slug}`}>
 							<span className='text-xl text-indigo-700 hover:text-indigo-500 cursor-pointer block mb-4'>
 								{item.name}
 							</span>
