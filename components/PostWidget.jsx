@@ -36,7 +36,7 @@ function PostWidget({categories	, slug}) {
 								 {moment(item.createdAt).format('MMM, DD, YYYY')}
 							 </p>
 							 <Link href={`/post/${item.slug}`}>
-									<span className='text-lg'>Hello World</span>
+									<span className='text-lg'>{item.title}</span>
 							 </Link>
 						</div>
 					</div>
